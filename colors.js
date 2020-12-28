@@ -14,7 +14,7 @@ function setColor(color){
         document.querySelector('body').style.color='white';
         self.value='day';
 
-        setColor('powderblue');
+        setColor('white');
 
       }
       else{
@@ -23,7 +23,7 @@ function setColor(color){
         self.value='night';
 
 
-        setColor('red');
+        setColor('black');
 
       }
 
