@@ -16,7 +16,7 @@ h1{
 }
 
 .button{
-  background-color: #4CAF50;
+background-color: #4CAF50;
 border: none;
 color: white;
 text-align: center;
@@ -28,7 +28,7 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-#grid ol{
+#grid ul{
   border-right:1px solid gray;
   width:100px;
   margin:0;
