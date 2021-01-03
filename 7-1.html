@@ -19,7 +19,7 @@
     <script>
         const canvas = document.querySelector('.canvas');
         const context = canvas.getContext('2d');
-        const boxes = [];
+                const boxes = [];
         const mousePos = {
             x: 0,
             y: 0
@@ -29,6 +29,7 @@
         let oX;
         let oY;
         let step; 
+        let rafid;
         
         context.font = 'bold 30px sans-serif';
 
@@ -74,12 +75,20 @@
                 case 3:
 
                 panel.draw();   
-                panel.showContent();
+                
                     break;
             }
             
                     
-            requestAnimationFrame(render);
+            rafId = requestAnimationFrame(render);
+            console.log(rafId);
+
+            if(step === 3){
+                panel.showContent();
+                cancelAnimationFrame(rafId);
+            }
+
+            
         }
 
         
@@ -134,6 +143,7 @@
                 step = 1;
                 panel.scale = 0;
                 selectedBox = null;
+                render();
             }
             
         })
