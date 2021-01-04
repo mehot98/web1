@@ -12,7 +12,7 @@ function setColor(color){
       if(self.value==='night'){
         document.querySelector('body').style.backgroundColor='black';
         document.querySelector('body').style.color='white';
-        self.value='day';
+        self.value=' day ';
 
         setColor('white');
 
