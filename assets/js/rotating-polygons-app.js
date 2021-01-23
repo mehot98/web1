@@ -1,4 +1,4 @@
-import{Polygon} from './polygon.js';
+import{Polygon} from './rotating-polygons-polygon.js';
 
 class App{
     constructor(){
